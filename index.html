@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bowser browser</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="shortcut icon" href="src/bowser.png" type="image/x-icon" />
+    <link rel="icon" href="src/bowser.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <img src="src/bowser.png" class="bowser" draggable="false" />
+    <h1>Bowser browser</h1>
+    <h2>No search history!</h2>
+    <input
+      type="text"
+      id="search"
+      placeholder="Search Bowser's castle..."
+      spellcheck="false"
+    />
+    <label for="search" id="message"></label>
+    <button id="btn">🔍</button>
+    <iframe id="page-content"></iframe>
+    <div id="nav">
+      <button id="closebtn">❌</button>
+      <img src="src/ham.png" id="hbtn" />
+    </div>
+    <div id="overlay">
+      <a id="author" href="author.html">Browser made by flebedev99</a>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

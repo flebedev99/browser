@@ -47,6 +47,7 @@ function closePage() {
   search.select();
   search.focus();
   content.style.visibility = "hidden";
+  content.src = null;
 }
 
 function ham() {

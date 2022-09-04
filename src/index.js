@@ -19,9 +19,6 @@ hbtn.onclick = function () {
 document.body.onkeydown = function (e) {
   if (e.keyCode === 13) {
     searchURL();
-  } else if (e.keyCode === 82) {
-    content.src = null;
-    searchURL();
   }
 };
 

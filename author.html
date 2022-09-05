@@ -35,6 +35,7 @@
     <a href="index.html">Bowser Browser</a>
     <h1>flebedev99</h1>
     <h3>web developer</h3>
+    <h2 id="c">youpic.com</h2>
     <p>
       Lorem ipsum dolor sit amet conse ctetur adipisicing elit. A pariat ur
       harum illum labore. Iste ipsam accusamus, nemo dolor fugiat rep udiandae
@@ -92,5 +93,14 @@
       facilis dicta. Ad veritatis omnis beatae nemo id sapiente vitae eius earum
       ex cupiditate.
     </p>
+    <script>
+      const c = document.getElementById("c");
+      
+      c.onclick = function() {
+        c.select();
+        navigator.clipboard.writeText(c.innerText);
+        alert(c.innerText + "Copied")
+      }
+    </script>
   </body>
 </html>

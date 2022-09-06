@@ -28,10 +28,6 @@ function searchURL() {
   } else {
     content.src = "https://" + search.value;
   }
-  if (search.value.includes("youpic.com") {
-      search.value = "Don't search for innapropriate things!"
-      window.close();
-}
   if (!search.value.includes(".")) {
     message.innerText = "Bowser browser dosen't own any search engine";
     search.value = "Please type in a valid domain";
